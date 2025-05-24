@@ -1,0 +1,12 @@
+
+.button-primary {
+  @include button-style($primary-color, #fff);
+}
+
+.button-secondary {
+  @include button-style($secondary-color, #fff);
+}
+
+.button-secondary{
+  color: aquamarine;
+}
