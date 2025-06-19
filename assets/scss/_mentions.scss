@@ -1,0 +1,41 @@
+.mentions {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+
+
+  .mentions-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    color: #444;
+    margin-top: 30px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+  }
+
+  p, ul {
+    color: #555;
+    margin: 10px 0;
+  }
+
+
+  ul {
+    padding-left: 20px;
+    list-style: disc;
+  }
+}

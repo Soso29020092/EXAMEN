@@ -1,0 +1,121 @@
+.service-client{
+
+  .livraison {
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 2rem;
+  }
+  .livraison img{
+    height: 100%;
+    width: 100%;
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+    border-radius: 5%;
+    object-fit: cover;
+
+  }
+
+
+  .paiements {
+    color: #222;
+    text-align: center;
+    padding: 4rem 2rem;
+    height: 50vh;
+    margin-bottom: 100px;
+  }
+
+  .paiements h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .grid-paiement {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .grid-paiement img {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+  }
+
+  .content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 12px;
+    color: white;
+  }
+  .retour {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 12px;
+    color: white;
+  }
+
+  .content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .paiements {
+      margin-bottom: 25px;
+      height: 30vh;
+    }
+    .section {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      text-align: center;
+      justify-content: center;
+    }
+
+    .grid-paiement {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .livraison{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      height: 75vh;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .grid-paiement {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .paiements{
+      height: 75vh;
+    }
+    .livraison{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      height: 75vh;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+
+}

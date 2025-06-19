@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Al-Yusra</title>
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="boutique">
+<header>
+    <div class="container">
+        <nav class="navbar">
+            <a href="index.html" class="nav-branding">AL-YUSRA.</a>
+
+            <ul class="nav-menu">
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="A-propos.html" class="nav-link">À propos</a>
+                </li>
+
+                <!-- Boutique (desktop dropdown) -->
+                <li class="nav-item dropdown desktop-only">
+                    <a href="Boutique.html?categorie=produits" class="nav-link">Boutique</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Boutique.html?categorie=ballons" class="dropdown-link">Ballons</a></li>
+                        <li><a href="Boutique.html?categorie=maillots" class="dropdown-link">Maillots</a></li>
+                        <li><a href="Boutique.html?categorie=chaussures" class="dropdown-link">Chaussures</a></li>
+                    </ul>
+                </li>
+
+                <!-- Boutique (mobile version visible directement) -->
+                <li class="nav-item mobile-only">
+                    <span class="nav-link no-hover">Boutique</span>
+                </li>
+                <li class="nav-item mobile-only sub-item">
+                    <a href="Boutique.html?categorie=ballons" class="nav-link">Ballons</a>
+                </li>
+                <li class="nav-item mobile-only sub-item">
+                    <a href="Boutique.html?categorie=maillots" class="nav-link">Maillots</a>
+                </li>
+                <li class="nav-item mobile-only sub-item">
+                    <a href="Boutique.html?categorie=chaussures" class="nav-link">Chaussures</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="service-client.html" class="nav-link">Service client</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="Contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <div class="nav-icons">
+                <a href="panier.html" class="icon-link">
+                    <img src="assets/images/panier.png" alt="Panier" class="icon" />
+                </a>
+                <a href="Compte.html" class="icon-link">
+                    <img src="assets/images/compte.png" alt="Compte" class="icon" />
+                </a>
+            </div>
+
+            <!-- Menu burger -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+
+
+<section class="articles">
+    <h2>Boutique</h2>
+    <!-- FILTRE PRODUITS -->
+    <div class="filtre">
+        <button onclick="filtreProduit('produits')">Tous</button>
+        <button onclick="filtreProduit('ballons')">Ballons</button>
+        <button onclick="filtreProduit('chaussures')">Chaussures</button>
+        <button onclick="filtreProduit('maillots')">Maillots</button>
+    </div>
+    <div class="produits">
+
+        <div class="ballons">
+            <div class="carte-produit">
+                <img src="assets/images/nike3.jpg" alt="Nike Ultra">
+                <div class="infos">
+                    <h3>Puma Sayan</h3>
+                    <p class="titre">Ballon conçu pour la vitesse</p>
+                    <p class="prix">75$</p>
+                    <div class="taille">
+                        <button class="taille-button">3</button>
+                        <button class="taille-button">4</button>
+                        <button class="taille-button">5</button>
+                    </div>
+                    <button class="ajouter-panier">🛒</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="ballons">
+            <div class="carte-produit">
+                <img src="assets/images/pedram-raz-J7G405kXeKs-unsplash.jpg" alt="Nike Ultra">
+                <div class="infos">
+                    <h3>Adidas sun</h3>
+                    <p class="titre">Ballon conçu pour terrain gras</p>
+                    <p class="prix">65$</p>
+                    <div class="taille">
+                        <button class="taille-button">3</button>
+                        <button class="taille-button">4</button>
+                        <button class="taille-button">5</button>
+                    </div>
+                    <button class="ajouter-panier">🛒</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="ballons">
+            <div class="carte-produit">
+                <img src="assets/images/bella-lac-LTyPTQ2tgNA-unsplash.jpg" alt="Nike Ultra">
+                <div class="infos">
+                    <h3>Barca colletor</h3>
+                    <p class="titre">Ballon conçu pour synthétique</p>
+                    <p class="prix">95$</p>
+                    <div class="taille">
+                        <button class="taille-button">3</button>
+                        <button class="taille-button">4</button>
+                        <button class="taille-button">5</button>
+                    </div>
+                    <button class="ajouter-panier">🛒</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="chaussures">
+            <div class="carte-produit">
+                <img src="assets/images/caleb-kim-CNyPADgicD8-unsplash.jpg" alt="Nike Ultra">
+                <div class="infos">
+                    <h3>Nike Mercurial</h3>
+                    <p class="titre">Donnez de la vitesse à votre jeu</p>
+                    <p class="prix">275$</p>
+                    <div class="taille">
+                        <button class="taille-button">39</button>
+                        <button class="taille-button">40</button>
+                        <button class="taille-button">41</button>
+                    </div>
+                    <button class="ajouter-panier">🛒</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="chaussures">
+            <div class="carte-produit">
+                <img src="assets/images/braden-hopkins-MdPQMLqn-ws-unsplash.jpg" alt="Nike Ultra">
+                <div class="infos">
+                    <h3>Adidas predator</h3>
+                    <p class="titre">La maitrise à tout instant</p>
+                    <p class="prix">175$</p>
+                    <div class="taille">
+                        <button class="taille-button">39</button>
+                        <button class="taille-button">40</button>
+                        <button class="taille-button">41</button>
+                    </div>
+                    <button class="ajouter-panier">🛒</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="chaussures">
+            <div class="carte-produit">
+                <img src="assets/images/braden-hopkins--17fXrsLWFE-unsplash.jpg" alt="Nike Ultra">
+                <div class="infos">
+                    <h3>Puma Glory</h3>
+                    <p class="titre">La classe à l'ancienne</p>
+                    <p class="prix">75$</p>
+                    <div class="taille">
+                        <button class="taille-button">39</button>
+                        <button class="taille-button">40</button>
+                        <button class="taille-button">41</button>
+                    </div>
+                    <button class="ajouter-panier">🛒</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="maillots">
+            <div class="carte-produit">
+                <img src="assets/images/medelwaid-88gDjedDgkA-unsplash.jpg" alt="Nike Ultra">
+                <div class="infos">
+                    <h3>Barcelone</h3>
+                    <p class="titre">Edition limitée 2015</p>
+                    <p class="prix">75$</p>
+                    <div class="taille">
+                        <button class="taille-button">S</button>
+                        <button class="taille-button">M</button>
+                        <button class="taille-button">L</button>
+                    </div>
+                    <button class="ajouter-panier">🛒</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="maillots">
+            <div class="carte-produit">
+                <img src="assets/images/simon-reza-Yfv7JszxYyw-unsplash.jpg" alt="Nike Ultra">
+                <div class="infos">
+                    <h3>Real Madrid</h3>
+                    <p class="titre">Nouvelle collection 2026</p>
+                    <p class="prix">75$</p>
+                    <div class="taille">
+                        <button class="taille-button">S</button>
+                        <button class="taille-button">M</button>
+                        <button class="taille-button">L</button>
+                    </div>
+                    <button class="ajouter-panier">🛒</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="maillots">
+            <div class="carte-produit">
+                <img src="assets/images/geoffrey-gu-yfZY_kuJmvo-unsplash.jpg" alt="Nike Ultra">
+                <div class="infos">
+                    <h3>PSG</h3>
+                    <p class="titre">Maillot Third 2025</p>
+                    <p class="prix">75$</p>
+                    <div class="taille">
+                        <button class="taille-button">S</button>
+                        <button class="taille-button">M</button>
+                        <button class="taille-button">L</button>
+                    </div>
+                    <button class="ajouter-panier">🛒</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+<section class="paginer">
+    <div class="pagination">
+        <button class="page-btn active">1</button>
+        <button class="page-btn">2</button>
+        <button class="page-btn">3</button>
+        <button class="page-btn">4</button>
+        <button class="page-btn">5</button>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="colonne">
+            <div class="footer-colonne">
+                <h4>AL-Yusra</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="A-propos.html">A propos</a></li>
+                    <li><a href="Boutique.html?categorie=produits">Boutique</a></li>
+                    <li><a href="service-client.html">Services client</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-colonne">
+                <h4>Nos liens utiles</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Retour</a></li>
+                    <li><a href="#">RGPD</a></li>
+                    <li><a href="#">Paiement</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-colonne">
+                <h4>Suivez-Nous</h4>
+                <div class="réseau-sociaux">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="Boutique.js"></script>
+<script src="navbar.js"></script>
+</body>
+</html>

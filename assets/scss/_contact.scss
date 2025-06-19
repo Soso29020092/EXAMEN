@@ -1,0 +1,135 @@
+.Contact{
+  .contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 1rem;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
+    height: 100vh;
+  }
+
+  .form-container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .form-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .form-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .form-content {
+    flex: 1;
+    padding: 2rem;
+  }
+
+  .form-content h2 {
+    font-size: 24px;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .donnees {
+    display: flex;
+    gap: 3rem;
+  }
+
+  .donnees input {
+    flex: 1;
+  }
+
+  input,
+  textarea {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+  }
+
+  input:focus,
+  textarea:focus {
+    border-color: #436fdc;
+  }
+
+  textarea {
+    resize: none;
+    height: 80px;
+  }
+
+  button {
+    margin-top: 1rem;
+    padding: 10px;
+    background-color: #436fdc;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  button:hover {
+    background-color: black;
+    color: white;
+  }
+
+  @media screen and (max-width: 768px) {
+    .Contact .form-container {
+      flex-direction: column;
+    }
+
+    .Contact .form-image {
+      width: 100%;
+      height: 200px;
+    }
+
+    .Contact .form-image img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .Contact .form-content {
+      padding: 1.5rem;
+    }
+
+    .Contact .donnees {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .Contact input,
+    .Contact textarea {
+      width: 100%;
+    }
+
+    .Contact form {
+      gap: 1rem;
+    }
+  }
+
+
+}

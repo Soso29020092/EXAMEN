@@ -1,0 +1,175 @@
+.boutique {
+  .paginer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    margin: 0;
+
+
+    .pagination {
+      display: flex;
+      gap: 10px;
+    }
+
+    .page-btn {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      background-color: #ccc;
+      color: #333;
+      cursor: default;
+      font-size: 16px;
+    }
+
+    .page-btn.active {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+
+.articles {
+  //padding: 2rem 2rem;
+  //background-color: white;
+  .filtre {
+    text-align: center;
+    margin-bottom: 50px;
+
+  }
+
+
+  .filtre button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #d5d0d0;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+  }
+
+  .filtre button:hover {
+    background-color: black;
+    color: white;
+  }
+
+h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin-top: 100px;
+
+}
+
+.produits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+  justify-items: center;
+}
+
+.carte-produit {
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  text-align: center;
+  width: 300px;
+  height: 400px;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  img {
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+    height: 250px;
+    padding-top: 20px;
+  }
+
+  .infos {
+    padding: 2rem;
+    position: relative;
+
+    h3 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .titre {
+      margin: 0.5rem 0;
+      font-size: 16px;
+      color: #555;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      height: 0;
+    }
+
+    .prix{
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .taille {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 1rem;
+      justify-content: center;
+    }
+
+    .taille-button{
+      background-color: #e0e0e0;
+      color: black;
+      border: none;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .taille-button:hover {
+      background-color: black;
+      color: white;
+    }
+
+
+    .ajouter-panier {
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #333;
+      }
+    }
+  }
+
+  &:hover .titre {
+    opacity: 1;
+    height: auto;
+  }
+}
+  }
+
+}
+
+
+
+

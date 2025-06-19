@@ -1,12 +1,257 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <title>Al-Yusra</title>
     <link rel="stylesheet" href="assets/css/style.min.css">
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<body class="Acceuil">
+<header>
+    <div class="container">
+        <nav class="navbar">
+            <a href="index.html" class="nav-branding">AL-YUSRA.</a>
 
+            <ul class="nav-menu">
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="A-propos.html" class="nav-link">À propos</a>
+                </li>
+
+                <!-- Boutique (desktop dropdown) -->
+                <li class="nav-item dropdown desktop-only">
+                    <a href="Boutique.html?categorie=produits" class="nav-link">Boutique</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Boutique.html?categorie=ballons" class="dropdown-link">Ballons</a></li>
+                        <li><a href="Boutique.html?categorie=maillots" class="dropdown-link">Maillots</a></li>
+                        <li><a href="Boutique.html?categorie=chaussures" class="dropdown-link">Chaussures</a></li>
+                    </ul>
+                </li>
+
+                <!-- Boutique (mobile version visible directement) -->
+                <li class="nav-item mobile-only">
+                    <span class="nav-link no-hover">Boutique</span>
+                </li>
+                <li class="nav-item mobile-only sub-item">
+                    <a href="Boutique.html?categorie=ballons" class="nav-link">Ballons</a>
+                </li>
+                <li class="nav-item mobile-only sub-item">
+                    <a href="Boutique.html?categorie=maillots" class="nav-link">Maillots</a>
+                </li>
+                <li class="nav-item mobile-only sub-item">
+                    <a href="Boutique.html?categorie=chaussures" class="nav-link">Chaussures</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="service-client.html" class="nav-link">Service client</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="Contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <div class="nav-icons">
+                <a href="panier.html" class="icon-link">
+                    <img src="assets/images/panier.png" alt="Panier" class="icon" />
+                </a>
+                <a href="Compte.html" class="icon-link">
+                    <img src="assets/images/compte.png" alt="Compte" class="icon" />
+                </a>
+            </div>
+
+            <!-- Menu burger -->
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<div class="video-background">
+    <video autoplay muted loop playsinline>
+        <source src="../EXAMEN/assets/images/2657271-uhd_3840_2160_24fps.mp4" type="video/mp4" />
+        Erreur de lecture du navigateur.
+    </video>
+    <a href="boutique.html?categorie=produits" class="btn-shop">Voir la boutique</a>
+
+</div>
+
+
+
+
+<section class="best-sellers">
+    <h2>Best Sellers</h2>
+    <div class="products">
+        <div class="product-card">
+            <img src="assets/images/nike1.jfif" alt="Ballon NIKE super">
+            <div class="product-info">
+                <h3>Adidas Pro</h3>
+                <p class="subtitle">Ballon de match officiel FIFA</p>
+               <p class="prix">90$</p>
+                <div class="taille">
+                    <button class="taille-button">3</button>
+                    <button class="taille-button">4</button>
+                    <button class="taille-button">5</button>
+                </div>
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="assets/images/nike2.jfif" alt="Nike Flight">
+            <div class="product-info">
+                <h3>Nike Flight</h3>
+                <p class="subtitle">Technologie Aerowsculpt</p>
+                <p class="prix">95$</p>
+                <div class="taille">
+                    <button class="taille-button">3</button>
+                    <button class="taille-button">4</button>
+                    <button class="taille-button">5</button>
+                </div>
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="assets/images/nike3.jpg" alt="Nike Ultra">
+            <div class="product-info">
+                <h3>Puma Ultra</h3>
+                <p class="subtitle">Ballon conçu pour la vitesse</p>
+                <p class="prix">75$</p>
+                <div class="taille">
+                    <button class="taille-button">3</button>
+                    <button class="taille-button">4</button>
+                    <button class="taille-button">5</button>
+                </div>
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="justdoit">
+
+    <div class="promo-video">
+        <video autoplay muted loop playsinline>
+            <source src="assets/images/10349008-uhd_2160_4096_25fps.mp4" type="video/mp4" />
+            Erreur de lecture.
+        </video>
+        <a href="boutique.html?categorie=produits" class="btn-shop">Voir la boutique</a>
+    </div>
+
+
+    <div class="promo-image">
+        <img src="assets/images/pexels-pixabay-274422.jpg" alt="Promo Image" />
+    </div>
+
+    <!-- Slogan (col 3-4, ligne 3-4) -->
+    <div class="promo-slogan">
+        <h2>JUST PLAY TOGHETER.</h2>
+    </div>
+</section>
+
+<section class="top-vente">
+    <h2>NEW COLLECTION</h2>
+    <div class="products">
+        <div class="product-card">
+            <img src="assets/images/nike1.jfif" alt="Ballon NIKE super">
+            <div class="product-info">
+                <h3>Adidas Pro</h3>
+                <p class="subtitle">Ballon de match officiel FIFA</p>
+                <p class="prix">90$</p>
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="assets/images/nike2.jfif" alt="Nike Flight">
+            <div class="product-info">
+                <h3>Nike Flight</h3>
+                <p class="subtitle">Technologie Aerowsculpt</p>
+                <p class="prix">95$</p>
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="assets/images/nike3.jpg" alt="Nike Ultra">
+            <div class="product-info">
+                <h3>Puma Ultra</h3>
+                <p class="subtitle">Ballon conçu pour la vitesse</p>
+                <p class="prix">75$</p>
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="assets/images/wp8255803.jpg" alt="Nike Sayan">
+            <div class="product-info">
+                <h3>Nike Sayan</h3>
+                <p class="subtitle">Ballon conçu pour le haut niveau</p>
+                <p class="prix">115$</p>
+                <button class="add-to-cart">🛒</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="newsletter">
+    <div class="newsletter-form">
+    <h2>Restez connecter</h2>
+    <p>Suivez l'actualité de nos dernières tendances</p>
+
+    <form action="">
+        <input type="email" class="email-input" placeholder="Entrer votre adresse-e-mail">
+        <input type="submit" class="btn" value="Subscribe">
+    </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="colonne">
+            <div class="footer-colonne">
+                <h4>AL-Yusra</h4>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="A-propos.html">A propos</a></li>
+                    <li><a href="Boutique.html?categorie=produits">Boutique</a></li>
+                    <li><a href="service-client.html">Services client</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-colonne">
+                <h4>Nos liens utiles</h4>
+                <ul>
+                    <li><a href="politique-confidentialite.html">Politique Confidentialité</a></li>
+                    <li><a href="mentions.html">Mentions légales</a></li>
+                    <li><a href="cookies.html">Cookie</a></li>
+                    <li><a href="#">RGPD</a></li>
+                    <li><a href="#">Paiement</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-colonne">
+                <h4>Suivez-Nous</h4>
+                <div class="réseau-sociaux">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="navbar.js"></script>
 </body>
 </html>

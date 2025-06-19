@@ -1,0 +1,198 @@
+.A-propos{
+margin: 0 auto;
+
+
+  svg {
+    align-content: center;
+    width: 350px;
+    height: 350px;
+  }
+
+  .nike {
+    display: flex;
+    gap: 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    background-image: url(../images/nike-svgrepo-com\(1\).png);
+    background-size: 50px;
+    /* overflow: hidden; */
+
+  }
+
+
+
+  .text_nike {
+    padding: 10px 10px;
+    backdrop-filter: blur(2px);
+    border-radius: 30px;
+  }
+
+
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 590px;
+  }
+
+  .adidas {
+    display: flex;
+    gap: 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(192, 192, 192);
+    background-image: url(../images/adidas-training-svgrepo-com\(3\).png);
+    background-size: 50px;
+  }
+
+  /* .logo_adidas {
+      width: 350px;
+      height: 350px;
+
+  } */
+
+  .text_adidas {
+    padding: 10px 10px;
+    backdrop-filter: blur(2px);
+    border-radius: 30px;
+  }
+
+  .puma {
+    display: flex;
+    gap: 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-image: url(../images/puma\(2\).png);
+    background-size: 50px;
+
+  }
+
+  /* .logo_puma {
+      width: 350px;
+      height: 350px;
+
+  } */
+
+  .text_puma {
+    padding: 10px 10px;
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    color: white;
+  }
+  .temoignages {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .titre-section {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+
+  .grille-temoignages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .carte-temoin {
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+
+  .carte-temoin:hover {
+    transform: translateY(-5px);
+  }
+
+  .photo-profil {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  .texte-avis {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 15px;
+  }
+
+  .nom {
+    font-size: 1.1rem;
+    color: #222;
+    margin-bottom: 5px;
+  }
+
+  .role {
+    font-size: 0.9rem;
+    color: #888;
+  }
+
+
+
+  @media (max-width: 775px) {
+    svg {
+      align-content: center;
+      width: 200px;
+      height: 200px;
+    }
+
+    .nike {
+      display: block;
+      height: 445px;
+
+    }
+
+    .logo_nike {
+
+      height: 150px;
+
+    }
+
+    .adidas {
+      display: block;
+      height: 445px;
+
+    }
+
+    .logo_adidas {
+
+      height: 150px;
+
+    }
+
+    .puma {
+      display: block;
+      height: 445px;
+
+    }
+
+    .logo_puma {
+
+      height: 220px;
+
+    }
+  }
+
+
+  @media (min-width: 395px) {
+    .nike {
+      gap: 30px;
+    }
+  }
+
+
+}

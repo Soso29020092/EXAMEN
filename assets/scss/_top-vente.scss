@@ -1,0 +1,132 @@
+.top-vente{
+  padding: 2rem 2rem;
+  min-height: 100vh;
+
+
+  h2 {
+    text-align: center;
+    margin-bottom: 10rem;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    justify-items: center;
+  }
+
+  .product-card {
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    text-align: center;
+    width: 300px;
+    height: 400px;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    img {
+      max-width: 150px;
+      max-height: 150px;
+      object-fit: cover;
+      height: 250px;
+    }
+
+    .product-info {
+      padding: 2rem;
+      position: relative;
+
+      h3 {
+        margin: 0;
+        font-size: 2rem;
+      }
+
+      .subtitle {
+        margin: 0.5rem 0;
+        font-size: 1.5rem;
+        color: #555;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        height: 0;
+      }
+
+      .add-to-cart {
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #333;
+        }
+      }
+    }
+
+    &:hover .subtitle {
+      opacity: 1;
+      height: auto;
+    }
+  }
+
+} @media (max-width: 767px) {
+  .top-vente {
+    padding: 1rem 1rem;
+
+    h2 {
+      font-size: 18px;
+      margin-bottom: 4rem;
+    }
+
+    .products {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+
+    .product-card {
+      width: 300px;
+      height: auto;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transform: none !important; /* disable hover effect */
+
+      img {
+        max-width: 100%;
+        height: 180px;
+      }
+
+      .product-info {
+        padding: 1rem;
+
+        h3 {
+          font-size: 1.5rem;
+        }
+
+        .subtitle {
+          opacity: 1 !important;
+          height: auto;
+          font-size: 1.2rem;
+        }
+
+        .add-to-cart {
+          width: 35px;
+          height: 35px;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
